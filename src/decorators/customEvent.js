@@ -9,7 +9,6 @@
 export const checkStatus = function(dataEventOff, e) {
   const { show } = this.state;
   const { id } = this.props;
-  const isCapture = this.isCapture(e.currentTarget);
   const currentItem = e.currentTarget.getAttribute('currentItem');
 
   if (show && currentItem === 'true') {

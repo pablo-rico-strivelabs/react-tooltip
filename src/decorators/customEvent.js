@@ -12,7 +12,6 @@ export const checkStatus = function(dataEventOff, e) {
   const isCapture = this.isCapture(e.currentTarget);
   const currentItem = e.currentTarget.getAttribute('currentItem');
 
-  if (!isCapture) e.stopPropagation();
   if (show && currentItem === 'true') {
     if (!dataEventOff) this.hideTooltip(e);
   } else {
